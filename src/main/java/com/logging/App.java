@@ -1,33 +1,28 @@
 package com.logging;
 
-import org.apache.log4j.Logger;
 
-public class App{
-	
-	final static Logger logger = Logger.getLogger(App.class);
-	
+import com.logging.dao.DAOFactory;
+import com.logging.dao.interfaces.IUserDAO;
+import com.logging.entity.User;
+
+public class App {
+
+	//private static Logger logger = Logger.getLogger(App.class);
+
 	public static void main(String[] args) {
-	
-		App obj = new App();
-		obj.runMe("yusufcakmak");
+
+		IUserDAO userDAO = null;
+		DAOFactory factory = null;
+
+
+		factory = DAOFactory.instance(DAOFactory.HIBERNATE);
+		userDAO = factory.getUserDAO();
+
+		User user = new User();
+		user.setuserName("Murat");
+		user.setuserPassword("123");
 		
+		userDAO.insertUser(user);
+
 	}
-	
-	private void runMe(String parameter){
-		
-		if(logger.isDebugEnabled()){
-			logger.debug("This is debug : " + parameter);
-		}
-		
-		if(logger.isInfoEnabled()){
-			logger.info("This is info : " + parameter);
-		}
-		
-		logger.warn("This is warn : " + parameter);
-		logger.error("This is error : " + parameter);
-		logger.fatal("This is fatal : " + parameter);
-		
-	}
-	
 }
-	
