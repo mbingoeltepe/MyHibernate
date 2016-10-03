@@ -1,4 +1,4 @@
-package com.logging.dao;
+package com.hbtest.dao;
 
 import java.io.Serializable;
 

@@ -1,15 +1,14 @@
-package com.logging.dao;
+package com.hbtest.dao;
 
 import java.sql.SQLException;
 
 import org.apache.log4j.Logger;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
-import org.hibernate.SessionFactory;
 
-import com.logging.connection.HibernateUtil;
-import com.logging.dao.impl.UserHibernateDAO;
-import com.logging.dao.interfaces.IUserDAO;
+import com.hbtest.connection.HibernateUtil;
+import com.hbtest.dao.impl.UserHibernateDAO;
+import com.hbtest.dao.interfaces.IUserDAO;
 
 
 

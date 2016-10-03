@@ -1,4 +1,4 @@
-package com.logging;
+package com.hbtest;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

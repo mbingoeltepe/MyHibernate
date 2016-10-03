@@ -1,4 +1,4 @@
-package com.logging.entity;
+package com.hbtest.entity;
 
 import java.io.Serializable;
 

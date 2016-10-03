@@ -1,7 +1,7 @@
-package com.logging.dao.interfaces;
+package com.hbtest.dao.interfaces;
 
-import com.logging.dao.GenericDAO;
-import com.logging.entity.User;
+import com.hbtest.dao.GenericDAO;
+import com.hbtest.entity.User;
 
 
 

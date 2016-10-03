@@ -12,9 +12,5 @@
 		<property name="hibernate.show_sql">true</property>
 		<property name="hibernate.format_sql">true</property>
 		<property name="connection.pool_size">1</property>
-		
-		<!-- Mapping Classes to do -->
-		<mapping class="com.logging.entity.User" />
-
 	</session-factory>
 </hibernate-configuration>

@@ -1,4 +1,4 @@
-package com.logging.connection;
+package com.hbtest.connection;
 
 import java.sql.SQLException;
 import org.apache.log4j.Logger;
@@ -53,15 +53,16 @@ public class HibernateUtil{
 	 */
 	private static void connect() throws SQLException {
 		try {
-			Configuration configuration = new Configuration();
-			configuration.configure("hibernate.cfg.xml");
-			logger.info("Hibernate Configuration loaded");
+			Configuration cfg = new Configuration();
+			cfg.configure("hibernate.cfg.xml");
+		    cfg.addAnnotatedClass(com.hbtest.entity.User.class);
+		    logger.info("Hibernate Configuration loaded");
 
 			ServiceRegistry serviceRegistry = new StandardServiceRegistryBuilder()
-					.applySettings(configuration.getProperties()).build();
+					.applySettings(cfg.getProperties()).build();
 			logger.info("Hibernate serviceRegistry created");
 
-			sessionFactory = configuration.buildSessionFactory(serviceRegistry);
+			sessionFactory = cfg.buildSessionFactory(serviceRegistry);
 
 			logger.info("Connecting to the database");
 		} catch (Throwable ex) {

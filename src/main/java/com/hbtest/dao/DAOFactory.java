@@ -1,8 +1,9 @@
-package com.logging.dao;
+package com.hbtest.dao;
 
 import org.apache.log4j.Logger;
 
-import com.logging.dao.interfaces.IUserDAO;
+import com.hbtest.dao.interfaces.IUserDAO;
+
 
 
 

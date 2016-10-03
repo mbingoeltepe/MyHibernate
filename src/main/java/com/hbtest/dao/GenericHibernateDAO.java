@@ -1,4 +1,4 @@
-package com.logging.dao;
+package com.hbtest.dao;
 
 import java.io.Serializable;
 import java.lang.reflect.ParameterizedType;
@@ -6,6 +6,7 @@ import java.lang.reflect.ParameterizedType;
 import org.apache.log4j.Logger;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
+import com.hbtest.dao.GenericDAO;
 
 public abstract class GenericHibernateDAO<T, ID extends Serializable> implements GenericDAO<T, ID> {
 

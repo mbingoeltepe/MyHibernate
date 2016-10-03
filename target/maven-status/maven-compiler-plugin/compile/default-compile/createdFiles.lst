@@ -1,1 +1,9 @@
-com/logging/App.class
+com/hbtest/dao/GenericHibernateDAO.class
+com/hbtest/entity/User.class
+com/hbtest/dao/GenericDAO.class
+com/hbtest/dao/DAOHibernateFactory.class
+com/hbtest/dao/interfaces/IUserDAO.class
+com/hbtest/dao/impl/UserHibernateDAO.class
+com/hbtest/dao/DAOFactory.class
+com/hbtest/connection/HibernateUtil.class
+com/hbtest/App.class

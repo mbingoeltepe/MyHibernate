@@ -1,1 +1,9 @@
-/home/berard/workspace/logging/src/main/java/com/logging/App.java
+/home/berard/workspace/MyHibernate/src/main/java/com/hbtest/App.java
+/home/berard/workspace/MyHibernate/src/main/java/com/hbtest/dao/DAOHibernateFactory.java
+/home/berard/workspace/MyHibernate/src/main/java/com/hbtest/dao/DAOFactory.java
+/home/berard/workspace/MyHibernate/src/main/java/com/hbtest/dao/GenericHibernateDAO.java
+/home/berard/workspace/MyHibernate/src/main/java/com/hbtest/dao/impl/UserHibernateDAO.java
+/home/berard/workspace/MyHibernate/src/main/java/com/hbtest/entity/User.java
+/home/berard/workspace/MyHibernate/src/main/java/com/hbtest/dao/interfaces/IUserDAO.java
+/home/berard/workspace/MyHibernate/src/main/java/com/hbtest/dao/GenericDAO.java
+/home/berard/workspace/MyHibernate/src/main/java/com/hbtest/connection/HibernateUtil.java

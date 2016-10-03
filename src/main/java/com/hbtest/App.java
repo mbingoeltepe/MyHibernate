@@ -1,9 +1,9 @@
-package com.logging;
+package com.hbtest;
 
 
-import com.logging.dao.DAOFactory;
-import com.logging.dao.interfaces.IUserDAO;
-import com.logging.entity.User;
+import com.hbtest.dao.DAOFactory;
+import com.hbtest.dao.interfaces.IUserDAO;
+import com.hbtest.entity.User;
 
 public class App {
 
